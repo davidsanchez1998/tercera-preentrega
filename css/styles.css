@@ -95,8 +95,93 @@ main {
 .bbparrafo{
     width: 500px;
     height: 500px;
+  }
+
+
+  /* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  /* Ajustar el ancho de la navegación */
+  .navbar {
+    width: 100%;
+  }
+  
+  /* Ocultar la lista de enlaces */
+  .lista {
+    display: none;
+  }
+  
+  /* Mostrar el botón para desplegar el menú */
+  .menu {
+    display: block;
+    text-align: right;
+    margin: 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Mostrar la lista de enlaces cuando se hace clic en el botón */
+  .menu.active .lista {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el botón */
+  .menu .icono-menu {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Ajustar el ancho de las imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Ajustar el ancho de los contenedores */
+  .trigger,
+  .triggerparrafo,
+  .king,
+  .bbparrafo {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Ajustar el ancho del pie de página */
+  .listafooter {
+    width: 100%;
+    text-align: center;
+  }
 }
 
+@media (max-width: 768px) {
+  .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trigger,
+  .king {
+    width: 100%;
+  }
+
+  .triggerparrafo,
+  .bbparrafo {
+    padding: 10px;
+  }
+}
 
 .tituloformulario{
     margin: 20px;

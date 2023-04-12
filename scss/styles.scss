@@ -10,12 +10,13 @@ html {
   height: 100%;
 }
 
-style body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+style
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 main {
   flex: 1;
@@ -189,14 +190,15 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-}
-input style main, input footer,
-textarea style main,
-textarea footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  style
+  main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 input[type=submit] {
@@ -210,6 +212,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #0062cc;
+
+
 }
 
 .productosgguitarras {
@@ -228,6 +232,8 @@ input[type=submit]:hover {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -260,5 +266,3 @@ footer {
 .listafooter {
   display: flex;
 }
-
-/*# sourceMappingURL=styles.css.map */

@@ -65,6 +65,16 @@ body {
   text-align: center;
 }
 
+.trigger {
+  position: relative;
+  transition: transform 0.3s ease-in-out; /* Establecemos una transición para que la animación se realice de forma suave */
+}
+
+.trigger:hover {
+  transform: translateX(100px); /* Establecemos la transformación que se aplicará al elemento al pasar el cursor por encima */
+}
+
+
 .triggerparrafo {
   width: 400px;
   height: 200px;
